@@ -1,0 +1,120 @@
+\documentclass[11pt, english]{article}
+  
+  % if you need to pass options to natbib, use, e.g.:
+  % \PassOptionsToPackage{numbers, compress}{natbib}
+  % before loading nips_2016
+  %
+  % to avoid loading the natbib package, add option nonatbib:
+  %\usepackage[no]{nips_2016}
+  
+  %\usepackage{nips_2016}
+  
+  % to compile a camera-ready version, add the [final] option, e.g.:
+  \usepackage[final]{nips_2016}
+  \usepackage{natbib}
+  \setcitestyle{numbers}
+  \usepackage[utf8]{inputenc} % allow utf-8 input
+  \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+  \usepackage{hyperref}       % hyperlinks
+  \usepackage{url}            % simple URL typesetting
+  \usepackage{booktabs}       % professional-quality tables
+  \usepackage{amsfonts}       % blackboard math symbols
+  \usepackage{nicefrac}       % compact symbols for 1/2, etc.
+  \usepackage{microtype}      % microtypography
+  \usepackage{indentfirst}
+  \usepackage{amsmath}
+  \usepackage{fancyhdr}
+  \usepackage{graphicx}
+  \usepackage{printlen}
+  \usepackage{color}
+  \usepackage{babel}
+  %\usepackage{lmodern}
+  
+  \graphicspath{{./figures/}}
+  
+  \fancypagestyle{equalc}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[R]{* indicates equal contribution}}
+  
+  \title{CSC2547 Learning Discrete Latent Structure: Generative Adversarial Networks via Gradient Estimators}
+  
+  % The \author macro works with any number of authors. There are two
+  % commands used to separate the names and addresses of multiple
+  % authors: \And and \AND.
+  %
+  % Using \And between authors leaves it to LaTeX to determine where to
+  % break the lines. Using \AND forces a line break at that point. So,
+  % if LaTeX puts 3 of 4 authors names on the first line, and the last
+  % on the second line, try using \AND instead of \And before the third
+  % author name.
+  
+  \author{
+  	\textbf{Aparna Balagopalan*}\\
+	University of Toronto\\
+	27 King's College Circle\\
+	Toronto, ON M5S\\
+	aparna@cs.toronto.edu
+	\and
+  	\textbf{Satya Krishna Gorti*}\\
+	University of Toronto\\
+	27 King's College Circle\\
+	Toronto, ON M5S\\
+	satyag@cs.toronto.edu
+	\and
+	\textbf{Mathieu Ravaut*} \\ 
+	University of Toronto \\
+	27 King's College Circle\\
+	Toronto, ON M5S\\
+	mravox@cs.toronto.edu 
+	\and
+  	\textbf{Raeid Saqur*}\\
+	University of Toronto\\
+	27 King's College Circle\\
+	Toronto, ON M5S\\
+	raeidsaqur@cs.toronto.edu	
+}
+  
+  \begin{document}
+  % \nipsfinalcopy is no longer used
+  
+  
+  \maketitle
+  
+  \begin{abstract}
+
+  \end{abstract}
+  
+  \thispagestyle{equalc}
+  \section{Introduction}
+  
+  \section{Background}
+  
+  \subsection{Generative Adversarial Networks (GANs)}
+  
+  \subsection{Sequential GANs}
+  
+  \subsection{REINFORCE}
+  
+  \subsection{REBAR \& RELAX}
+  
+  \section{SeqGAN with policy gradient}
+  
+  \section{Backpropagation through time}
+  
+  \section{Experiments}
+  
+  \subsection{Toy data}
+  
+  \subsection{Pre-training with MLE}
+  
+  \subsection{Comparison of gradient estimators}
+  
+  \subsection{Quality of generated sequences}
+  
+  
+  \section{Conclusion}
+  
+
+  \bibliographystyle{plain}
+  %\bibliography{ref}
+  
+  
+  \end{document}
