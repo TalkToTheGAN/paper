@@ -1,14 +1,16 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Background}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Generative Adversarial Networks \(GANs\)}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Sequential GANs}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{REINFORCE}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{REBAR \046 RELAX}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{SeqGAN with policy gradient}{}% 7
-\BOOKMARK [1][-]{section.4}{Backpropagation through time}{}% 8
-\BOOKMARK [1][-]{section.5}{Experiments}{}% 9
-\BOOKMARK [2][-]{subsection.5.1}{Toy data}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.2}{Pre-training with MLE}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.3}{Comparison of gradient estimators}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.4}{Quality of generated sequences}{section.5}% 13
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 14
+\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
+\BOOKMARK [1][-]{section.3}{Gradient Estimators}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{REINFORCE}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{REBAR}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{RELAX}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{SeqGAN with policy gradient}{}% 7
+\BOOKMARK [1][-]{section.5}{Backpropagation through time}{}% 8
+\BOOKMARK [1][-]{section.6}{Evaluation}{}% 9
+\BOOKMARK [1][-]{section.7}{Experiments}{}% 10
+\BOOKMARK [2][-]{subsection.7.1}{Toy data}{section.7}% 11
+\BOOKMARK [2][-]{subsection.7.2}{Pre-training with MLE}{section.7}% 12
+\BOOKMARK [2][-]{subsection.7.3}{Comparison of gradient estimators}{section.7}% 13
+\BOOKMARK [2][-]{subsection.7.4}{Quality of generated sequences}{section.7}% 14
+\BOOKMARK [2][-]{subsection.7.5}{Training schedule}{section.7}% 15
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 16

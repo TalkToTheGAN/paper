@@ -79,25 +79,35 @@
   \maketitle
   
   \begin{abstract}
+  In this work, we consider the problem of sequence generation using Generative Adversarial Networks (GANs). Sequential data generation using Generative Adversarial Networks presents two structural issues: backpropagating gradients through discrete generator outputs, and waiting for an entire output sequence to be generated before computing the performance score. In this project, we aim to circumvent the above mentioned issues using policy gradients. We build on SeqGAN and compare the performance of the following gradient estimators on token generation: REINFORCE, REBAR, and RELAX. 
 
   \end{abstract}
   
   \thispagestyle{equalc}
   \section{Introduction}
+  The task of meaningful text generation is of crucial interest. To generate long sequences that make sense from end to end, a machine learning model must learn to keep and manage a lot of context and abstract features. In the past years, RNN-based neural networks have been trained successfully to predict the next character or word from a sequence of previous characters or words. However, directly producing full sequences, in natural language for instance, remains an active research area. 
   
-  \section{Background}
+In the last few years, Generative Adversarial Networks (GANs) have shown great performance on several generation tasks, especially image generation.  However, less work has been done regarding the task of generating sequential data, mainly because of two structural aspects of GANs. First, in GANs, the generator updates by backpropagating gradients from the outputs of the discriminator, which makes
+little sense when the generated data is made of discrete tokens. Secondly, GANs can only give a score once an entire sequence has been generated, which is a problem with large sequences of tokens.
+
+To alleviate these two issues, SeqGAN takes a reinforcement learning approach while generating tokens, and considers the generative model as a stochastic parametrized policy. This way, the gradient can pass back from the discriminator loss to the generator’s weights. When a token is generated, the
+rest of the sequence is drawn with Monte Carlo sampling, so that the model bypasses the need to wait for a full sequence generation to get a score. It can get a score at each token generation via averaging these Monte Carlo samples. The reward is given by the discriminator's output when fed with the generated sequence. In this paper, we follow the same approach and use the discriminator as our reward function. 
   
-  \subsection{Generative Adversarial Networks (GANs)}
+  \section{Related Work}
   
-  \subsection{Sequential GANs}
-  
+  \section{Gradient Estimators}
+      
   \subsection{REINFORCE}
   
-  \subsection{REBAR \& RELAX}
+  \subsection{REBAR}
+  
+  \subsection{RELAX}
   
   \section{SeqGAN with policy gradient}
   
   \section{Backpropagation through time}
+  
+  \section{Evaluation}
   
   \section{Experiments}
   
@@ -108,6 +118,8 @@
   \subsection{Comparison of gradient estimators}
   
   \subsection{Quality of generated sequences}
+  
+  \subsection{Training schedule}
   
   
   \section{Conclusion}
